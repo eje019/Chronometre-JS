@@ -56,8 +56,10 @@ button {
   color: white;
   font-size: 16px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 button:hover{
   background-color: rgb(40, 103, 205);
+  transform: scale(1.05);
 }
