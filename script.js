@@ -15,7 +15,7 @@ window.onload = function() {
 }
 
 //mise en place du compteur
-function chrono(){
+function update_chrono(){
     ms++;
     if(ms==10){
         ms = 1;
@@ -30,6 +30,9 @@ function chrono(){
         heure++;
     }
 
+    //insertion des vakeurs dans les spans
+    //[O] permet de selectionner le premier span
+    //[1] le deuxieme etc...
     sp[0].innerHTML = heure + " h";
     sp[1].innerHTML = min + " min";
     sp[2].innerHTML = s + " s";
