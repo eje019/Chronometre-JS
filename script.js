@@ -13,3 +13,26 @@ window.onload = function() {
     min = 0;
     heure = 0;
 }
+
+//mise en place du compteur
+function chrono(){
+    ms++;
+    if(ms==10){
+        ms = 1;
+        s++;
+    }
+    if(s==60){
+        s = 0;
+        min++;
+    }
+    if(min==60){
+        min = 0;
+        heure++;
+    }
+
+    sp[0].innerHTML = heure + " h";
+    sp[1].innerHTML = min + " min";
+    sp[2].innerHTML = s + " s";
+    sp[3].innerHTML = ms + " ms";
+}
+
