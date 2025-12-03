@@ -39,3 +39,7 @@ function update_chrono(){
     sp[3].innerHTML = ms + " ms";
 }
 
+//fonction pour demarrer le chrono
+function start_chrono(){
+    t = setInterval("update_chrono()",100);
+}
