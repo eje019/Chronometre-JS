@@ -50,3 +50,19 @@ function stop_chrono(){
     clearInterval(t); //arrete l'execution de la fonction update_chrono
     btnStart.disabled = false; //reactive le bouton start
 }
+
+//reinitialiser le chrono
+function reset_chrono(){
+    clearInterval(t);//arrete l'execution de la fonction update_chrono
+    //initialiser les valeurs compteur a 0
+    btnStart.disabled = false; //reactive le bouton start
+    ms = 0;
+    s = 0;
+    min = 0;
+    heure = 0;
+    //inserer ces nouvelles valeurs dans les spans
+    sp[0].innerHTML = heure + " h";
+    sp[1].innerHTML = min + " min";
+    sp[2].innerHTML = s + " s";
+    sp[3].innerHTML = ms + " ms";
+}
