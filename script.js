@@ -41,5 +41,6 @@ function update_chrono(){
 
 //fonction pour demarrer le chrono
 function start_chrono(){
-    t = setInterval("update_chrono()",100);
+    t = setInterval("update_chrono()",100); //cette ligne execute la fonction update_chrono toutes les 100 millisecondes
+
 }
