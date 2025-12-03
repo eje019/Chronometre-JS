@@ -44,3 +44,9 @@ function start_chrono(){
     t = setInterval("update_chrono()",100); //cette ligne execute la fonction update_chrono toutes les 100 millisecondes
     btnStart.disabled = true; //desactive le bouton start pour eviter les erreurs
 }
+
+//stopper le chrono
+function stop_chrono(){
+    clearInterval(t); //arrete l'execution de la fonction update_chrono
+    btnStart.disabled = false; //reactive le bouton start
+}
